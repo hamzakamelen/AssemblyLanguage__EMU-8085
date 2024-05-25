@@ -1,0 +1,22 @@
+// LAB - 3 Perform addition of two 16 bits number using memory location 4000H, 4001H, 4002H and 4003H and store result in 4004H and 4005H
+// 4000H = 15H, 4001H = 1CH, 4002H = B7H, and 4003H = 5AH
+
+MVI A,15H
+STA 4000H
+MVI A,1CH
+STA 4001H
+MVI A,B7H
+STA 4002
+MVI A,5AH
+STA 4003
+
+LHLD 4000H
+XCHG
+LHLD 4002H
+MOV A,E
+ADD L
+MOV L,A
+MOV A,D
+ADC H
+SHLD 4004H
+HLT
