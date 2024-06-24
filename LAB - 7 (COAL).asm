@@ -3,7 +3,6 @@ MVI A,03H
 STA 2200H
 MVI A,B2H
 STA 2201H
-
 LDA 2200H
 MOV E,A
 MVI D, 00 // Get the first number in DE register pair
