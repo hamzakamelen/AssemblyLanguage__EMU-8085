@@ -1,4 +1,4 @@
-// 17 Statement Multiply two 8-bit numbers stored in memory locations 2200H and 2201H by repetitive addition  and store the result in memory locations 2300H and 2301H
+// Multiply two 8-bit numbers stored in memory locations 2200H and 2201H by repetitive addition  and store the result in memory locations 2300H and 2301H
 MVI A,03H
 STA 2200H
 MVI A,B2H
